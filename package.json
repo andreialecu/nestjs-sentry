@@ -19,7 +19,7 @@
     "url": "git+https://github.com/ntegral/nestjs-sentry"
   },
   "scripts": {
-    "prepack": "npm run build",
+    "prepack": "tsc -p tsconfig.build.json",
     "build": "tsc -p tsconfig.build.json",
     "clean": "rm -rf dist",
     "format": "prettier --write \"lib/**/*.ts\"",
